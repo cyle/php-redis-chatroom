@@ -1,0 +1,86 @@
+/* this is a dope font: https://managore.itch.io/m5x7 */
+@font-face {
+	font-family: 'm5x7';
+	src: url('font/m5x7.eot');
+	src: url('font/m5x7.eot?#iefix') format('embedded-opentype'),
+		url('font/m5x7.woff') format('woff'),
+		url('font/m5x7.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* shitty retro chatroom styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #111;
+}
+
+body, input {
+    font-family: 'm5x7', monospace;
+    font-size: 32px;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+
+.chatroom-name-container {
+    position: fixed;
+    left: 3em;
+    top: 1em;
+}
+
+.chatroom-container {
+    position: fixed;
+    left: 3em;
+    right: 3em;
+    top: 2.5em;
+    bottom: 2.5em;
+    overflow: scroll;
+}
+
+.compose-container {
+    position: fixed;
+    bottom: 1em;
+    left: 3em;
+    right: 3em;
+}
+
+p.message {
+    line-height: 0.8;
+}
+
+.ts {
+    color: #ccc;
+    padding-right: 0.5em;
+}
+
+.name {
+    color: #0a0;
+    padding-right: 1em;
+}
+
+.name.you {
+    color: #00a;
+}
+
+.name.bot {
+    color: #a00;
+}
+
+.compose-container {
+    margin-top: 0.3em;
+}
+
+input.compose {
+    color: #111;
+    padding: 0.1em 0.3em;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
