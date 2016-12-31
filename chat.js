@@ -54,6 +54,7 @@ window.onload = function() {
 
     // start polling for new messages
     checking_for_new_messages = setInterval(get_messages, checkin_interval);
+    get_messages();
 
     // focus the message compose input field
     compose_input.focus();
@@ -105,7 +106,7 @@ function get_messages() {
             if (response_obj.ok === undefined || response_obj.ok !== true) {
                 alert('welp somethin wrong with the server');
             } else {
-                var last_checkin = response_obj.ts;
+                last_checkin = response_obj.ts;
                 var response_data = response_obj.data;
                 if (response_data.length === 0) {
                     return; // we're done, there aren't any new messages
